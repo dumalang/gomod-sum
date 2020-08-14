@@ -12,14 +12,6 @@ func Sum(numbers ...interface{}) int64 {
 	return res
 }
 
-func SumInt(numbers ...int) int64 {
-	res := 0
-	for _, number := range numbers {
-		res += number
-	}
-	return int64(res)
-}
-
 func convertToInt64(data interface{}) int64 {
 	if data == nil {
 		return 0
